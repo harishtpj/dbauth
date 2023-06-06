@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # The Home page for DBAuth app
+  root "info_pages#home"
+  get 'about', to: 'info_pages#about'
 end
