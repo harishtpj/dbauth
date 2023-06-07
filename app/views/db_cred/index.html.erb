@@ -1,0 +1,11 @@
+<h1>DB Creditnals</h1>
+
+<ul>
+  <% @db_credentials.each do |db_cred| %>
+    <li>
+      <%= link_to db_cred.name, db_cred %>
+    </li>
+  <% end %>
+
+  <a href="<%= root_path %>">GO BACK</a>
+</ul>
